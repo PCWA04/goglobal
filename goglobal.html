@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出海 - 台灣企業大未來 | Podcast 導讀系列</title>
+    <!-- 引入 Tailwind CSS (CDN) 以實現現代化響應式設計 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 Google 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#4facfe',
+                            dark: '#00f2fe',
+                            bg: '#f8fafc',
+                            text: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        /* 自訂音頻播放器樣式優化 */
+        audio {
+            width: 100%;
+            height: 48px;
+            outline: none;
+        }
+        audio::-webkit-media-controls-panel {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="text-brand-text antialiased">
+
+    <!-- Hero 標題區塊 -->
+    <header class="relative bg-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Ocean and Tech Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-slate-900/90 z-10"></div>
+        
+        <div class="relative z-20 max-w-5xl mx-auto px-6 py-20 text-center md:py-32">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/30 text-blue-200 text-sm font-semibold tracking-wider mb-4 border border-blue-400/30">
+                PODCAST 導讀系列
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
+                出海 <span class="text-blue-400">-</span> 台灣企業大未來
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                原著：簡立峰｜打破海島慣性，重新定位台灣。<br class="hidden md:block">在 AI 時代，我們如何具備航海家視野，邁向世界的數位海洋？
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#episodes" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-8 rounded-full transition duration-300 shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <i class="fas fa-headphones"></i> 開始收聽
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Podcast 集數列表 -->
+    <main id="episodes" class="max-w-4xl mx-auto px-6 py-16">
+        <div class="space-y-12">
+
+            <!-- EPISODE 1 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-300">
+                <div class="p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-5xl font-black text-slate-200">01</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-800">我們的海島思維與同溫層</h2>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-6">無形的慣性，讓我們陷在舒適的漩渦裡</p>
+                    
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        <strong>本集摘要：</strong>我們身處四面環海的島嶼，卻常常「看不見海」。本集將探討台灣人長期的「大陸思維」與舒適圈慣性如何限制了我們的想像力。藉由將台灣地圖轉個90度，我們將重新發現台灣作為東亞中心點的巨大優勢。打破同溫層、培養換位思考，是讓我們勇敢將想法「出海」的第一步。
+                    </p>
+
+                    <!-- 播放器區塊 -->
+                    <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
+                        <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
+                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/i0EF_lrODls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 章節列表 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-list-ul"></i> 本集涵蓋章節
+                        </h3>
+                        <ul class="grid md:grid-cols-2 gap-2 text-slate-700 text-sm bg-slate-50/50 p-4 rounded-lg">
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 1 章：看不見海的島，最危險</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 2 章：成為改變世界的台灣人</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 3 章：飛出慣性同溫層，讓想法出海</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- EPISODE 2 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-300">
+                <div class="p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-5xl font-black text-slate-200">02</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-800">重新翻轉視野，定位台灣</h2>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-6">盤點情勢與機會，規劃出海新策略</p>
+                    
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        <strong>本集摘要：</strong>台灣的經濟奇蹟面臨轉型，最大的國安危機不是少子化，而是「少國化」。本集探討如何運用網路與數位技術擴大「數位國土」，提出「台灣+1」的戰略思維，把鄰國當作市場與人才庫。當遠距工作打破國界，企業該如何打造跨國團隊，留住並吸引全球頂尖人才？我們即將從「製造島」蛻變為真正的「科技島」。
+                    </p>
+
+                    <!-- 播放器區塊 -->
+                    <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
+                        <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
+                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/qFm7es-6VEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 章節列表 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-list-ul"></i> 本集涵蓋章節
+                        </h3>
+                        <ul class="grid md:grid-cols-2 gap-2 text-slate-700 text-sm bg-slate-50/50 p-4 rounded-lg">
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 4 章：從真實海島到虛擬海洋，出海擴大數位國土</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 5 章：人才問題不在少子化，而在少國化</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 6 章：全球人才無疆界，台灣如何留才、引才</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 7 章：從製造島到科技島：台灣企業即將真正出海</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- EPISODE 3 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-300">
+                <div class="p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-5xl font-black text-slate-200">03</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-800">培養未來競爭力</h2>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-6">AI 時代的新思維與新人才觀</p>
+                    
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        <strong>本集摘要：</strong>進入 AI 世代，你需要具備什麼樣的能力？本集解析「新雙語」（英語溝通力與程式語言理解力）的重要性。我們將探討如何從極致合作中找尋力量，將 DEI (多元、平等與共融) 變成企業的必修課。更重要的是，學會「如何提問」，與 AI 從副駕駛 (Copilot) 發展到代理人 (Agent) 關係，成為不被淘汰的「π型人才」與一人公司創業者。
+                    </p>
+
+                    <!-- 播放器區塊 -->
+                    <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
+                        <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
+                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/4XeCCFFquuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 章節列表 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-list-ul"></i> 本集涵蓋章節
+                        </h3>
+                        <ul class="grid md:grid-cols-2 gap-2 text-slate-700 text-sm bg-slate-50/50 p-4 rounded-lg">
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 8 章：新雙語：數位浪潮中的生存與突圍技能</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 9 章：從衝突到協作、共創：極致合作的真正力量</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 10 章：當人才走向全球，DEI成為台灣的必修課</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 11 章：人才的GDP：挑戰極限，打造全球競爭力</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 12 章：學會與AI共創：從副駕駛到代理</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 13 章：會問才會贏：AI時代的關鍵能力</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 14 章：一人公司與π型人才：AI世代的人才新樣貌</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- EPISODE 4 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-300">
+                <div class="p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-5xl font-black text-slate-200">04</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-800">在台灣做影響世界的事</h2>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-6">跨世代軟硬整合，邁向世界製造</p>
+                    
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        <strong>本集摘要：</strong>我們該如何運用台灣的硬體優勢，在 AI 時代達到「軟體登峰」？本集以宏觀視角解析國際人才的養成路徑，以及如何利用遠距協作組織世界級的跨國團隊（如 Appier 模式）。探討以機器人為關鍵產業樞紐的轉型契機，並呼籲「老創與新創」跨世代攜手合作，將超高齡與少子化的挑戰，翻轉為台灣專屬的黃金十年。
+                    </p>
+
+                    <!-- 播放器區塊 -->
+                    <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
+                        <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
+                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/B6Egd7QQ-pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 章節列表 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-list-ul"></i> 本集涵蓋章節
+                        </h3>
+                        <ul class="grid md:grid-cols-2 gap-2 text-slate-700 text-sm bg-slate-50/50 p-4 rounded-lg">
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 15 章：從島國心態到航海家視野：國際人才養成與企業挑戰</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 16 章：以遠距協作組織國際團隊：邁向跨國企業的第一步</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 17 章：從硬體優勢到軟體登峰：以機器人打造產業的轉型契機</li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2 opacity-60"></i>第 18 章：超高齡與少子化下的契機：跨世代共創台灣黃金十年</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="font-bold text-white mb-1">出海 - 台灣企業大未來 Podcast</p>
+                <p class="text-sm">探討 AI 時代下的企業轉型與個人職涯發展</p>
+            </div>
+            <div class="flex gap-4">
+                <!-- 你的 GitHub 連結佔位符 -->
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300" aria-label="GitHub Repository">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300" aria-label="Share">
+                    <i class="fas fa-share-nodes text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 mt-8 pt-8 border-t border-slate-800/50 text-sm text-center md:text-left text-slate-500">
+            <p>本網頁由原著《出海 - 台灣企業大未來》內容整理衍生，僅供學術交流與 Podcast 導讀使用。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
