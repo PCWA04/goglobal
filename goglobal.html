@@ -31,14 +31,18 @@
     </script>
     <style>
         body { background-color: #f8fafc; }
-        /* 自訂音頻播放器樣式優化 */
-        audio {
+        /* 影片播放器容器的長寬比設定，確保 16:9 且響應式 */
+        .video-container {
+            position: relative;
             width: 100%;
-            height: 48px;
-            outline: none;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
         }
-        audio::-webkit-media-controls-panel {
-            background-color: #f1f5f9;
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -89,9 +93,18 @@
                     <!-- 播放器區塊 -->
                     <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
                         <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
-                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
-                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/i0EF_lrODls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-container rounded-lg shadow-sm overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/i0EF_lrODls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+
+                    <!-- 閱讀深度文章按鈕 (Part 1) -->
+                    <div class="mt-2 mb-8">
+                        <a href="part1.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors group">
+                            <i class="fas fa-file-alt text-slate-400 group-hover:text-blue-600 transition-colors"></i> 
+                            閱讀本集深度解析文章 
+                            <i class="fas fa-arrow-right text-sm transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
 
                     <!-- 章節列表 -->
@@ -124,9 +137,18 @@
                     <!-- 播放器區塊 -->
                     <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
                         <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
-                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
-                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/qFm7es-6VEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-container rounded-lg shadow-sm overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/qFm7es-6VEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+
+                    <!-- 閱讀深度文章按鈕 (Part 2) -->
+                    <div class="mt-2 mb-8">
+                        <a href="part2.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors group">
+                            <i class="fas fa-file-alt text-slate-400 group-hover:text-blue-600 transition-colors"></i> 
+                            閱讀本集深度解析文章 
+                            <i class="fas fa-arrow-right text-sm transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
 
                     <!-- 章節列表 -->
@@ -160,9 +182,18 @@
                     <!-- 播放器區塊 -->
                     <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
                         <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
-                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
-                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/4XeCCFFquuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-container rounded-lg shadow-sm overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/4XeCCFFquuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+
+                    <!-- 閱讀深度文章按鈕 (Part 3) -->
+                    <div class="mt-2 mb-8">
+                        <a href="part3.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors group">
+                            <i class="fas fa-file-alt text-slate-400 group-hover:text-blue-600 transition-colors"></i> 
+                            閱讀本集深度解析文章 
+                            <i class="fas fa-arrow-right text-sm transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
 
                     <!-- 章節列表 -->
@@ -199,9 +230,18 @@
                     <!-- 播放器區塊 -->
                     <div class="bg-slate-50 p-4 rounded-xl mb-6 border border-slate-100">
                         <p class="text-sm text-slate-500 font-medium mb-3"><i class="fab fa-youtube text-red-500 mr-1"></i> 收聽本集 (YouTube)</p>
-                        <div class="relative w-full overflow-hidden rounded-lg shadow-sm" style="padding-top: 56.25%;">
-                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/B6Egd7QQ-pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-container rounded-lg shadow-sm overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/B6Egd7QQ-pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+
+                    <!-- 閱讀深度文章按鈕 (Part 4) -->
+                    <div class="mt-2 mb-8">
+                        <a href="part4.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors group">
+                            <i class="fas fa-file-alt text-slate-400 group-hover:text-blue-600 transition-colors"></i> 
+                            閱讀本集深度解析文章 
+                            <i class="fas fa-arrow-right text-sm transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
 
                     <!-- 章節列表 -->
@@ -230,7 +270,7 @@
                 <p class="text-sm">探討 AI 時代下的企業轉型與個人職涯發展</p>
             </div>
             <div class="flex gap-4">
-                <!-- 你的 GitHub 連結佔位符 -->
+                <!-- 您的 GitHub 連結佔位符 -->
                 <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300" aria-label="GitHub Repository">
                     <i class="fab fa-github text-xl"></i>
                 </a>
